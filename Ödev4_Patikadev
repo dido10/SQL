@@ -1,0 +1,5 @@
+1-)select distinct(replacement_cost) from film
+2-)select count(distinct(replacement_cost)) from film
+3-)select count(*) from film where title like 'T%' and rating='g'
+4-) select * from country where len(country)=5
+5-)select * from city where city like '%R' or city like '%r'
