@@ -1,0 +1,10 @@
+1-)create table employee (id int,
+                          name Varchar(50),
+                          birthday DATE, 
+                          email VARCHAR(100),
+                           PRIMARY KEY (ID))
+3-)update employee set email ='XXXX@yahoo.com' where id=4
+  update employee set birthday ='2000.10.04' where id=1
+4-) delete employee where id=5
+    delete employee order by birthday desc limit 10
+
