@@ -1,0 +1,14 @@
+film tablosundan 'K' karakteri ile başlayan en uzun ve replacenet_cost u en düşük 4 filmi sıralayınız.
+1-)select * from film where title Ilike 'K%' order by max(len(title)), min(replacenet_cost) limit 4
+
+film tablosunda içerisinden en fazla sayıda film bulunduran rating kategorisi hangisidir?
+2-) select max(count(title)), rating from film group by rating 
+
+cutomer tablosunda en çok alışveriş yapan müşterinin adı nedir?
+3-)select name,max(count(name)) from customer  group by name
+
+category tablosundan kategori isimlerini ve kategori başına düşen film sayılarını sıralayınız.
+4-)select category,count(film) from category  group by category
+
+film tablosunda isminde en az 4 adet 'e' veya 'E' karakteri bulunan kç tane film vardır?
+5-)select count(*) from film where Ilike '%e%e%e%e%' or Ilike '%E%E%E%E%'
