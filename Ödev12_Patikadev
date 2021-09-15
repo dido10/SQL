@@ -1,0 +1,4 @@
+1-) select film from film where lenght>avg(lenght)
+2-) select film from film where rental_rate=max(rental_rate)
+3-) select film from film where rental_rate=min(rental_rate) and replacement_cost=min(replacement_cost)
+4-) select customer from payment where payment=max(payment)
